@@ -1,16 +1,16 @@
 <?php
 /**
-* Plugin Name: WooCommerce Continue Shopping
-* Plugin URI: http://www.happykite.co.uk
-* Description: Provides the ability to choose where the 'Continue Shopping' button on the WooCommerce Checkout takes you.
-* Author: HappyKite
-* Author URI: http://www.happykite.co.uk/
-* Version: 1.6
-* Text Domain: continue-shopping-for-woocommerce
-* Domain Path: /languages
-* WC requires at least: 2.4
-* WC tested up to: 8.2.1
-**/
+ * Plugin Name: WooCommerce Continue Shopping
+ * Plugin URI: http://www.happykite.co.uk
+ * Description: Provides the ability to choose where the 'Continue Shopping' button on the WooCommerce Checkout takes you.
+ * Author: HappyKite
+ * Author URI: http://www.happykite.co.uk/
+ * Version: 1.6.1
+ * Text Domain: continue-shopping-for-woocommerce
+ * Domain Path: /languages
+ * WC requires at least: 2.4
+ * WC tested up to: 9.3.3
+ **/
 
 /*
  * This file is part of WooCommerce Continue Shopping.
@@ -30,23 +30,26 @@
  * global variables
  ***************************/
 
-//Retrieve settings from Admin Options table
+// Retrieve settings from Admin Options table
 $hpy_cs_options = get_option( 'hpy_cs_settings' );
 
 
 /****************************
  * Declare HPOS Compatibility
- ****************************/
+ */
 
-add_action( 'before_woocommerce_init', function() {
-	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
-		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
 	}
-} );
+);
 
 /***************************
  * includes
- ***************************/
+ */
 
 add_action( 'plugins_loaded', 'hpy_cs_initiate_plugin' );
 

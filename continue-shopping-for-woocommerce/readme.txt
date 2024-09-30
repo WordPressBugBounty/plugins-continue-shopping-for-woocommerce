@@ -2,8 +2,8 @@
 Contributors: HappyKite, morrowmedia, philmorrow
 Tags: WooCommerce, Continue Shopping, WooCommerce continue shopping, eCommerce
 Requires at least: 4.2
-Tested up to: 6.3.2
-Stable tag: 1.6
+Tested up to: 6.6.2
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ Finally there is a fifth option of your own custom link. This can be used to all
 3. Go to WooCommerce -> Settings -> Products -> Continue Shopping to change where the button will take you.
 
 == Changelog ==
+= 1.6.1 - 27th September 2024 =
+* UPDATE - Works with WooCommerce 9.3+
+* UPDATE - Works with WordPress 6.6+
+
 = 1.6 - 27th October 2023 =
 * NEW - Tested and declared compatibility with WC HPOS
 * UPDATE - Works with WooCommerce 8.2.1
