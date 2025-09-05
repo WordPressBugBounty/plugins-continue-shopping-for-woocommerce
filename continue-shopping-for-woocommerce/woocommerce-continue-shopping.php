@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: WooCommerce Continue Shopping
+ * Plugin Name: Continue Shopping for WooCommerce
  * Plugin URI: http://www.happykite.co.uk
  * Description: Provides the ability to choose where the 'Continue Shopping' button on the WooCommerce Checkout takes you.
  * Author: HappyKite
  * Author URI: http://www.happykite.co.uk/
- * Version: 1.6.1
+ * Version: 1.6.2
  * Text Domain: continue-shopping-for-woocommerce
  * Domain Path: /languages
  * WC requires at least: 2.4
@@ -13,17 +13,17 @@
  **/
 
 /*
- * This file is part of WooCommerce Continue Shopping.
- * WooCommerce Continue Shopping is free software: you can redistribute it and/or modify
+ * This file is part of Continue Shopping for WooCommerce.
+ * Continue Shopping for WooCommerce is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * WooCommerce Continue Shopping is distributed in the hope that it will be useful,
+ * Continue Shopping for WooCommerce is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with WooCommerce Continue Shopping.  If not, see <http://www.gnu.org/licenses/>.
+ * along with Continue Shopping for WooCommerce.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /***************************
@@ -61,7 +61,6 @@ function hpy_cs_initiate_plugin() {
 /***************************
  * Adding Plugin Settings Link
  ***************************/
-
 function hpy_cs_settings_link( $links ) {
 	$settings_link = '<a href="admin.php?page=wc-settings&tab=products&section=hpy_cs">Settings</a>';
 	array_unshift( $links, $settings_link );
